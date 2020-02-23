@@ -1,0 +1,245 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SEEing is Believing: A look at UMD's campus entertainment organization</title>
+  <meta name="description" content="SEEing is Believing: A look at UMD's campus entertainment organization">
+  <meta name="author" content="Sean McGoey">
+  <meta property="og:title" content="SEEing is Believing">
+  <meta property="og:description" content="How UMD's entertainment group works to serve a diverse campus">
+  <meta property="og:image" content="images/hero.png">
+  <meta property="og:url" content="https://smcgoey.github.io/Sean-McGoey-Jour652/final/umd-see.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SEEing is Believing">
+  <meta name="twitter:description" content="How UMD's entertainment group works to serve a diverse campus">
+  <meta name="twitter:image" content="images/hero.png">
+  <meta name="twitter:image:alt" content="SEEing is Believing: A look at UMD's campus entertainment organization">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- load c3.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+  <!-- load google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Raleway:300,400,700&display=swap" rel="stylesheet">
+  <!-- load custom css -->
+  <link rel="stylesheet" href="finalstyle.css">
+  <!-- load d3.js and c3.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#"><span class="red">SEE</span>ing is Believing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#history-mission">History & Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#partnerships">Partnerships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#diverse-interests">Fostering Diversity</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero image -->
+  <img class="heroimage" src="images/hero.png" alt="SEEing is Believing: A look at UMD's campus entertainment organization">
+
+  <!-- container grid -->
+  <div class="container">
+
+    <!-- byline (h2) -->
+    <h2 class="byline">by <span class="red">SEAN McGOEY</span></h2>
+
+    <br>
+
+    <!-- introductory "chapter" - opening paragraphs -->
+    <div class="chapter" id="intro">
+      <div class="row">
+        <p class="chaptertext">There’s no doubt that on the University of Maryland’s campus, Art Attack is a major event. The most recent edition, held in May, started with a day of buildup on McKeldin Mall—DIY flower crowns, a petting zoo and an obstacle course, among other activities—before Harlem-based rapper A$AP Ferg performed to a raucous Xfinity Center crowd.</p>
+        <p class="chaptertext">Surely such a production requires the resources and efforts of a professional department somewhere within the university’s administration. That would be a reasonable assumption, but it would ultimately be incorrect.</p>
+        <!-- photo gallery (credit: W3Schools) -->
+        <div class="graphic-container photo-gallery">
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/alyraisman.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/asapferg.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/ilanaglazer.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="images/lilyachty.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="images/seediy.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+              <img src="images/vincestaples.png" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption" style="text-align: center;"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/alyraisman.png" style="width:100%" onclick="currentSlide(1)" alt="Aly Raisman at Hear the Turtle, March 28, 2019. Photo: SEE">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/asapferg.png" style="width:100%" onclick="currentSlide(2)" alt="A$AP Ferg at Art Attack 36, May 3, 2019. Photo: SEE">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/ilanaglazer.png" style="width:100%" onclick="currentSlide(3)" alt="Ilana Glazer at the Spring Comedy Show, February 12, 2019. Photo: SEE">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/lilyachty.png" style="width:100%" onclick="currentSlide(4)" alt="Lil Yachty at Art Attack 35, May 4, 2018. Photo: SEE">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/seediy.png" style="width:100%" onclick="currentSlide(5)" alt="SEE holds DIY craft sessions in addition to massive concerts like Art Attack and TerpStock. Photo: SEE">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/vincestaples.png" style="width:100%" onclick="currentSlide(6)" alt="Vince Staples at Art Attack 35, May 4, 2018. Photo: SEE">
+            </div>
+          </div>
+        </div>
+        <p class="chaptertext">“It is completely student-led … and I think that’s super important for people to know,” said Laura Hood, manager of student programs at the Stamp Student Union and advisor to Student Entertainment Events—the body responsible for booking raucous concerts, advance movie screenings and thought-provoking lectures.</p>
+        <p class="chaptertext">“I think when (students) see Art Attack or the comedy show, they’re like, ‘Oh, University of Maryland,’ but it’s not,” Hood said. “It’s students. Students talked to the agents. Students paid the performers. Students made sure everyone was in the building.”</p>
+      </div>
+    </div>
+
+    <!-- dividing line - five music note icons -->
+    <div class="divider">
+      <i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>
+    </div>
+
+    <!-- first chapter - history and mission of SEE -->
+    <div class="chapter" id="history-mission">
+      <div class="row">
+        <h3 class="chapter-headline">Going back to the beginning</h3>
+        <p class="chaptertext">SEE was founded in 1977, growing out of its predecessor the University Program Board, according to records in the University Archives. The Student Government Association, which partners with Stamp to set SEE’s yearly budget, established the organization “to centralize funding for student-sponsored events and to ensure equal representation of campus groups.”</p>
+        <br>
+        <!-- graphic: knight lab timeline on art attack history -->
+        <div class="graphic-container" id="timeline">
+          <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1uyPfOTQfHAW6H2DRrGOIK3FVtXCTv2NLu-cw0SuHsQs&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        </div>
+        <br>
+        <p class="chaptertext">SEE’s slate of 70-100 events per year ranges in size and scope from massive concert productions like Art Attack—which brings major national artists like Vince Staples, Weezer and Nelly to campus—to build-your-own-terrarium sessions and DIY tie-dye events in Stamp, but the mission of representing a diverse campus is never far from the minds of SEE’s 23-member executive board.</p>
+        <p class="chaptertext">“We like to acknowledge that everyone has different experiences, backgrounds—things that they like, that they dislike,” said Taylor Markey, a senior multiplatform journalism major and SEE’s current president. “So we like to take that into account, and we try to program and partner with different groups on campus.”</p>
+      </div>
+    </div>
+
+    <!-- dividing line - five music note icons -->
+    <div class="divider">
+      <i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>
+    </div>
+
+    <!-- second chapter: partnerships with campus organizations -->
+    <div class="chapter" id="partnerships">
+      <div class="row">
+        <h3 class="chapter-headline">Can't do it alone</h3>
+        <p class="chaptertext">Partnerships with organizations like the Black Student Union and Terps After Dark help SEE ensure that events are properly funded and that word gets out to the broadest possible audience.</p>
+        <p class="chaptertext">“We can’t reach every single student on campus, and those organizations often can help us with that,” said Yoad Merin, a junior economics and business management student who is currently serving as comedy director and will take over for Markey as president next year. New presidents are selected a year in advance so they can learn the ropes for a year and oversee the selection of any new directors.</p>
+        <!-- graphic: art attack genres -->
+        <div class="graphic-container" id="genre-by-decade">
+          <h2>Stepping up to the microphone</h2>
+          <p><em>Hip-hop has taken over Art Attack in the 2010s, dominating all other genres</em></p>
+          <br>
+          <div id="genreByDecadeChart"></div>
+          <p class="attribution">Data includes years with multiple co-headlining acts. Source: SEE records</p>
+        </div>
+        <br>
+        <p class="chaptertext">Efforts at representing the campus community don’t stop with organizational partnerships. SEE holds frequent surveys to give students a chance to weigh in on what events and entertainment they’d like to see, and lectures director Christina Moore said that the directors—whose email addresses are all listed on SEE’s website—receive regular messages that help build a “loop of communication” between SEE and the rest of the student body.</p>
+      </div>
+    </div>
+
+    <!-- dividing line - five music note icons -->
+    <div class="divider">
+      <i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>
+    </div>
+
+    <!-- third chapter: serving the diverse interests of UMD's campus -->
+    <div class="chapter" id="diverse-interests">
+      <div class="row">
+        <h3 class="chapter-headline">An opportunity, not a burden</h3>
+        <p class="chaptertext">Musical arts director Divya Kapoor, a junior double majoring in information systems and operations management and business analytics, sees growing diversity among the board and an increased focus on social awareness as catalysts for a change in the entertainment slate.</p>
+        <p class="chaptertext">“I think we’ve seen our interests and our backgrounds manifest into different types of acts that we want to bring,” Kapoor said, “and we’ve also become … more diligent about serving the campus.”</p>
+        <!-- graphic: venues of SEE events -->
+        <div class="graphic-container" id="venue-chart">
+          <h2>Where do SEE-sponsored events take place?</h2>
+          <p><em>The overwhelming majority of SEE's events are held at Stamp</em></p>
+          <br>
+          <div id="venueChart"></div>
+          <p class="attribution">Series events like the Fall Free Movie Series count as one event. Source: SEE Facebook event listings dating back to 2017-2018 school year</p>
+        </div>
+        <br>
+        <p class="chaptertext">Nolan Marks, a sophomore marketing major and SEE’s cinema director, sees programming for a diverse campus as an opportunity rather than a burden.</p>
+        <p class="chaptertext">“We have the privilege of being able to experiment and try new things,” said Marks, who incorporated the Indian film "3 Idiots" into SEE’s annual Free Fall Movie Series, which is typically made up of big-budget theatrical releases and some already-recognized classics. “There’s a lot…from a programmer’s perspective that we do to try and be as inclusive as we can while creating the best quality programming lineup.”</p>
+      </div>
+    </div>
+
+    <!-- dividing line - five music note icons -->
+    <div class="divider">
+      <i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-music icon"></i>
+    </div>
+
+    <br>
+
+    <!-- final "chapter" - kicker paragraphs -->
+    <div class="chapter" id="kicker">
+      <div class="row">
+        <p class="chaptertext">Ultimately, Hood says, the students that sit on SEE’s board—all of whom are unpaid volunteers—do so out of a passion for serving the campus community.</p>
+        <p class="chaptertext">“They do it not for … resume building,” Hood said, “but because they like the work and want to entertain.”</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="pagefooter">
+    <footer>
+      <p class="footertext">&copy;2019 Sean McGoey</p>
+    </footer>
+  </div>
+
+  <!-- link to external js file -->
+  <script src="scripts.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
