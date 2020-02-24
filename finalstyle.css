@@ -11,8 +11,12 @@ ul.navbar-nav {
  margin-right:50%;
 }
 
-.red {
-  color: #870000;
+.blue {
+  color: #000480;
+}
+
+.title-blue {
+  color: #212DE6;
 }
 
 .graphic-container {
@@ -27,7 +31,7 @@ ul.navbar-nav {
 
 .graphic-container h2 {
   font-size: 1.5em;
-  color:#BA0000;
+  color:#0006BF;
 
 }
 
@@ -41,7 +45,7 @@ ul.navbar-nav {
 }
 
 .nav-link:hover {
-  color: #BA0000 !important;
+  color: #0006BF !important;
 }
 
 .navbar {
@@ -125,7 +129,7 @@ img.heroimage {
 }
 
 .icon {
-  color: #BA0000;
+  color: #0006BF;
 }
 
 .chapter-headline {
@@ -135,8 +139,8 @@ img.heroimage {
   /* font-style: italic; */
   padding-top: 20px;
   width: 100%;
-  color: #870000;
-  margin-bottom: 20px;
+  color: #000480;
+  margin-bottom: 10px;
 }
 
 .chapter-subhed {
@@ -144,7 +148,7 @@ img.heroimage {
   font-size: 1.2em;
   font-weight: 700;
   /* font-style: italic; */
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 100%;
   color: #000;
   margin-bottom: 20px;
