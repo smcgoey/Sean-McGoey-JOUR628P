@@ -19,9 +19,10 @@ var barchart = c3.generate({
     bindto: '#arrestchart',
     data: {
         columns: [
-            ['United States', 121],
-            ['State of Maryland', 185],
-            ['Montgomery County Public Schools', 322]
+            ['United States', 120],
+            ['Montgomery County Public Schools', 194],
+            ['State of Maryland', 308],
+            ['Prince George\'s County Public Schools', 413]
         ],
         type: 'bar',
         labels: true
@@ -34,7 +35,7 @@ var barchart = c3.generate({
         //width: 100 // this makes bar width 100px
     },
     color: {
-      pattern: ['#2a8dc5', '#455380', '#ee6a4b']
+      pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2']
     }
 });
 
