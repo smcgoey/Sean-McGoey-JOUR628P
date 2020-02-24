@@ -139,6 +139,17 @@ img.heroimage {
   margin-bottom: 20px;
 }
 
+.chapter-subhed {
+  font-family: 'PT Serif', Georgia, serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  /* font-style: italic; */
+  padding-top: 20px;
+  width: 100%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
 .chaptertext {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;

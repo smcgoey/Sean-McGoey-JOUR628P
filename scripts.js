@@ -15,6 +15,29 @@ var chart = c3.generate({
   }
 });
 
+var barchart = c3.generate({
+    bindto: '#arrestchart',
+    data: {
+        columns: [
+            ['United States', 121],
+            ['State of Maryland', 185],
+            ['Montgomery County Public Schools', 322]
+        ],
+        type: 'bar',
+        labels: true
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    },
+    color: {
+      pattern: ['#2a8dc5', '#455380', '#ee6a4b']
+    }
+});
+
 var chart2 = c3.generate({
   bindto: '#venueChart',
   data: {
