@@ -1,2 +1,3 @@
 # Sean-McGoey-JOUR628P
-applied entrepreneurial journalism, spring 2020 at the university of maryland philip merrill college of journalism
+
+repo for applied entrepreneurial journalism coursework, spring 2020 semester at the university of maryland philip merrill college of journalism
