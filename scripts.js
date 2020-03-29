@@ -39,17 +39,37 @@ var barchart = c3.generate({
     }
 });
 
-var chart2 = c3.generate({
-  bindto: '#venueChart',
+var piechart1 = c3.generate({
+  bindto: '#mocoDemoChart',
   data: {
     // iris data from R
     columns: [
-      ['Stamp', 76],
-      ['McKeldin Mall', 4],
-      ['Ritchie Coliseum', 4],
-      ['The Clarice', 3],
-      ['Xfinity Center', 3],
-      ['All other venues', 9],
+      ['White', 28.3],
+      ['Hispanic or Latino', 32.3],
+      ['Black or African American', 21.4],
+      ['Asian', 14.4],
+      ['All others', 3.6]
+    ],
+    type : 'pie',
+    onclick: function (d, i) { console.log("onclick", d, i); },
+    onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+  },
+  color: {
+    pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255']
+  }
+});
+
+var piechart2 = c3.generate({
+  bindto: '#pgDemoChart',
+  data: {
+    // iris data from R
+    columns: [
+      ['Black or African American', 55],
+      ['Hispanic or Latino', 36],
+      ['White', 4],
+      ['Asian', 3],
+      ['All others', 2]
     ],
     type : 'pie',
     onclick: function (d, i) { console.log("onclick", d, i); },
