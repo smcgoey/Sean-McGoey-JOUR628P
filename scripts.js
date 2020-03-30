@@ -39,6 +39,56 @@ var barchart = c3.generate({
     }
 });
 
+var barchart2 = c3.generate({
+    bindto: '#mocoSuspensionChart',
+    data: {
+        columns: [
+            ['Black or African American', 43.9],
+            ['Hispanic or Latino', 30.6],
+            ['White', 6.1],
+            ['Asian', 5.3],
+            ['All other races', 3.8]
+        ],
+        type: 'bar',
+        labels: true
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    },
+    color: {
+      pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255']
+    }
+});
+
+var barchart3 = c3.generate({
+    bindto: '#pgSuspensionChart',
+    data: {
+        columns: [
+            ['Black or African American', 72.1],
+            ['Hispanic or Latino', 23.6],
+            ['White', 2.2],
+            ['Asian', 0.2],
+            ['All other races', 1.8]
+        ],
+        type: 'bar',
+        labels: true
+    },
+    bar: {
+        width: {
+            ratio: 0.5 // this makes bar width 50% of length between ticks
+        }
+        // or
+        //width: 100 // this makes bar width 100px
+    },
+    color: {
+      pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255']
+    }
+});
+
 var piechart1 = c3.generate({
   bindto: '#mocoDemoChart',
   data: {
