@@ -191,6 +191,12 @@ img.heroimage {
   margin-bottom: 20px;
 }
 
+.pullquote {
+  font-size:1.25em;
+  font-weight:700;
+  color:#BB0000;
+}
+
 .chaptertext {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-weight: 300;
